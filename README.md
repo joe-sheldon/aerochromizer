@@ -12,10 +12,22 @@ python aerochromizer.py --image [path to input jpeg] --output [path to output jp
 ````
 
 If you find the default values for some of the adjustments not to your liking, feel free to experiment. These can be 
-changed at runtime easily. For a full list of variables, see below:
+changed at runtime easily. For a full list of variables at any time, run with the -h parameter:
 
 ````
-Aerochromizer [-h] --image IMAGE --output OUTPUT [--wb1 WB1] [--wb2 WB2] [--contrast CONTRAST] [--saturation SATURATION] [--brightness BRIGHTNESS] [--red RED] [--green GREEN] [--blue BLUE]
+  -h, --help            show this help message and exit
+  --image IMAGE         File path of input image [REQUIRED]
+  --output OUTPUT       File path of output image [REQUIRED]
+  --wb1 WB1             Initial White Balance Temperature (1000 to 10000K) [default 5000]
+  --wb2 WB2             Second White Balance Temperature (1000 to 10000K) [default 4500]
+  --contrast CONTRAST   Contrast Adjustment Scale [default 1.8]
+  --saturation SATURATION
+                        Saturation Adjustment Scale [default 1.8]
+  --brightness BRIGHTNESS
+                        Brightness Adjustment Scale [default 0.75]
+  --red RED             Red Adjustment Scale [default 1.0]
+  --green GREEN         Green Adjustment Scale [default 0.5]
+  --blue BLUE           Blue Adjustment Scale [default 1.0]
 ````
 
 ## Operation

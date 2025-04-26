@@ -28,16 +28,16 @@ if __name__ == '__main__':
     DESCRIPTION = """Convert JPEGs taken from full-spectrum modified camera into aerochrome inspired colored images"""
 
     parser = argparse.ArgumentParser(prog=APP_NAME, description=DESCRIPTION)
-    parser.add_argument("--image", help="File path of input image", required=True)
-    parser.add_argument("--output", help="File path of output image", required=True)
-    parser.add_argument("--wb1", help="Initial White Balance Temperature (1000 to 10000K)", default=5000)
-    parser.add_argument("--wb2", help="Second White Balance Temperature (1000 to 10000K)", default=4500)
-    parser.add_argument("--contrast", help="Contrast Adjustment Scale", default=1.8)
-    parser.add_argument("--saturation", help="Saturation Adjustment Scale", default=1.8)
-    parser.add_argument("--brightness", help="Brightness Adjustment Scale", default=0.75)
-    parser.add_argument("--red", help="Red Adjustment Scale", default=1.0)
-    parser.add_argument("--green", help="Green Adjustment Scale", default=0.5)
-    parser.add_argument("--blue", help="Blue Adjustment Scale", default=1.0)
+    parser.add_argument("--image", help="File path of input image [REQUIRED]", required=True)
+    parser.add_argument("--output", help="File path of output image [REQUIRED]", required=True)
+    parser.add_argument("--wb1", help="Initial White Balance Temperature (1000 to 10000K) [default 5000]", default=5000)
+    parser.add_argument("--wb2", help="Second White Balance Temperature (1000 to 10000K) [default 4500]", default=4500)
+    parser.add_argument("--contrast", help="Contrast Adjustment Scale [default 1.8]", default=1.8)
+    parser.add_argument("--saturation", help="Saturation Adjustment Scale [default 1.8]", default=1.8)
+    parser.add_argument("--brightness", help="Brightness Adjustment Scale [default 0.75]", default=0.75)
+    parser.add_argument("--red", help="Red Adjustment Scale [default 1.0]", default=1.0)
+    parser.add_argument("--green", help="Green Adjustment Scale [default 0.5]", default=0.5)
+    parser.add_argument("--blue", help="Blue Adjustment Scale [default 1.0]", default=1.0)
     args = parser.parse_args()
 
     aero_img = None
