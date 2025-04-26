@@ -1,5 +1,5 @@
 # Aerochromizer
-Converts photos taken through a "Full Spectrum" modified camera into aerochrome styled photos. 
+Converts photos taken through a "Full Spectrum" modified camera into [Kodak Aerochrome](https://www.analog.cafe/r/kodak-aerochrome-a-colour-ir-film-guide-and-review-uwi3) styled photos. 
 
 ## To Install
 This has been tested with Python 3.13. You'll want to install the requirements in requirements.txt before attempting to
