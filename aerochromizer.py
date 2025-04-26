@@ -1,4 +1,4 @@
-import argparse, sys
+import argparse
 from PIL import Image, ImageEnhance
 from utils import adjust_color, rgb_to_brr, change_color_temperature
 
