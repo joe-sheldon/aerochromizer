@@ -1,0 +1,12 @@
+.venv/
+.idea/
+build/
+dist/
+samples/
+*.iml
+*jpg
+*jpeg
+*.spec
+vcs.xml
+misc.xml
+modules.xml
