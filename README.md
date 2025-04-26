@@ -31,10 +31,20 @@ changed at runtime easily. For a full list of variables at any time, run with th
 ````
 
 ## Operation
-1. Assume photo is taken white balanced to something approximately white (such as concrete).
+1. Assume photo is taken white balanced to something approximately white (such as concrete). Use of Red25A filter assumed
 2. White balance is changed to 'wb1' (in Kelvin) via table found [here](https://stackoverflow.com/questions/11884544/setting-color-temperature-for-a-given-image-like-in-photoshop)
 3. Colors are adjusted according to scales in inputs 'red', 'green', 'blue'
 4. Color channel swapped -- RGB to BRR
 5. White balance is yet again changed, this time to 'wb2' (in Kelvin)
 6. Contrast, Color, Brightness scales are modified per inputs 'contrast', 'saturation', 'brigtness'
 7. File is saved to disk to path specified in 'output'
+
+## Samples
+Samples are listed non-modified first, converted second. Taken with a full-spectrum Canon EOS M100 through Red25A filter 
+### Sample 1
+![Sample 1, non-modified](samples/sample_1.JPG "Sample 1, Non-modified")
+![Sample 1, converted](samples/sample_1_conv.jpg "Sample 1, converted")
+
+### Sample 2
+![Sample 2, non-modified](samples/sample_2.JPG "Sample 2, Non-modified")
+![Sample 2, converted](samples/sample_2_conv.jpg "Sample 2, converted")

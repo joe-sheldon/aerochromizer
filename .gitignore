@@ -2,7 +2,6 @@
 .idea/
 build/
 dist/
-samples/
 *.iml
 *jpg
 *jpeg
