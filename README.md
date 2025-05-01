@@ -16,8 +16,8 @@ changed at runtime easily. For a full list of variables at any time, run with th
 
 ````
   -h, --help            show this help message and exit
-  --image IMAGE         File path of input image [REQUIRED]
-  --output OUTPUT       File path of output image [REQUIRED]
+  --image IMAGE         File path of input image (alternatively a dir of images)
+  --output OUTPUT       File path of output image (alternatively a dir to save images into)
   --wb1 WB1             Initial White Balance Temperature (1000 to 10000K) [default 5000]
   --wb2 WB2             Second White Balance Temperature (1000 to 10000K) [default 4500]
   --contrast CONTRAST   Contrast Adjustment Scale [default 1.8]
