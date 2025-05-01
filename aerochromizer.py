@@ -75,7 +75,6 @@ if __name__ == '__main__':
                 except IOError:
                     print(f"Failed to find/open image '{input_path}'")
 
-
     else:
         if is_output_path_dir:
             raise RuntimeError(f"Output path must be a file if input path is a single file!")
@@ -89,5 +88,5 @@ if __name__ == '__main__':
         try:
             aero_img.save(output_path)
         except IOError:
-            print(f"Failed save image '{output_path}'")
+            print(f"Failed saving image '{output_path}'")
 
